@@ -1,0 +1,229 @@
+{
+
+    "data":[
+        {
+            "Name":"two wheeler",
+            "code":"two wheeler"
+        },
+        {
+            "Name":"four wheeler",
+            "code":"four wheeler"
+        }
+    ],
+    "VehicalName":[
+        {
+            "Name":"HARLEY DEVIDSON",
+            "code":"HARLEY DEVIDSON"
+        },
+        {
+            "Name":"BMW",
+            "code":"BMW"
+        },
+        {
+            "Name":"HERO",
+            "code":"HERO"
+        },
+        {
+            "Name":"KTM",
+            "code":"KTM"
+        }, {
+            "Name":"MAHENDRA",
+            "code":"MAHENDRA"
+        },
+        {
+            "Name":"TVS",
+            "code":"TVS"
+        },
+        {
+            "Name":"FAB MOTORS",
+            "code":"FAB MOTORS"
+        },
+        {
+            "Name":"ROYAL ENFIELD",
+            "code":"ROYAL ENFIELD"
+        },
+        {
+            "Name":"DUKATI",
+            "code":"DUKATI"
+        },
+        {
+            "Name":"MONTO",
+            "code":"MONTO"
+        }
+    ],
+
+    "VehicalModel":[
+
+        {
+            "Name":"FAT BOY",
+            "code":"FAT BOY"
+        },
+        {
+            "Name":"SPORTSTAR",
+            "code":"SPORSTAR"
+        },
+        {
+            "Name":"ROAD KING",
+            "code":"ROAD KING"
+        },
+        {
+            "Name":"NIGHT STER",
+            "code":"NIGHT STER"
+        },
+        {
+            "Name":"SOFTAIL",
+            "code":"SOFTAIL"
+        },
+
+        {
+            "Name":"FAT BOB",
+            "code":"FAT BOB"
+        },
+        {
+            "Name":"CVO",
+            "code":"CVO"
+        },
+        {
+            "Name":"BREACKOUT",
+            "code":"BREACKOUT"
+        }
+    ],
+    "VehicalModel":[
+
+        {
+            "Name":"FAT BOY",
+            "code":"FAT BOY"
+        },
+        {
+            "Name":"SPORTSTAR",
+            "code":"SPORSTAR"
+        },
+        {
+            "Name":"ROAD KING",
+            "code":"ROAD KING"
+        },
+        {
+            "Name":"NIGHT STER",
+            "code":"NIGHT STER"
+        },
+        {
+            "Name":"SOFTAIL",
+            "code":"SOFTAIL"
+        },
+
+        {
+            "Name":"FAT BOB",
+            "code":"FAT BOB"
+        },
+        {
+            "Name":"CVO",
+            "code":"CVO"
+        },
+        {
+            "Name":"BREACKOUT",
+            "code":"BREACKOUT"
+        }
+    ],
+    "VehicalVarient":[
+
+{
+    "Name":"FAT BOY 1240",
+    "code":"FAT BOY special"
+},
+{
+    "Name":"SPORTSTAR 4902 ",
+    "code":"SPORSTAR s493 "
+},
+{
+    "Name":"ROAD KING K2349",
+    "code":"ROAD KING special"
+},
+{
+    "Name":"NIGHT STER O213",
+    "code":"NIGHT STER special"
+},
+{
+    "Name":"SOFTAIL A083",
+    "code":"SOFTAIL"
+},
+
+{
+    "Name":"FAT BOB E4234",
+    "code":"FAT BOB"
+},
+{
+    "Name":"CVO Q3431",
+    "code":"CVO"
+},
+{
+    "Name":"BREACKOUT P3405",
+    "code":"BREACKOUT"
+}
+],
+
+
+    "SelectYear":[
+        {
+            "Name":"2004",
+             "code":"2004"
+        },
+        {
+            "Name":"2005",
+             "code":"2005"
+        },
+        {
+            "Name":"2006",
+             "code":"2006"
+        },
+        {
+            "Name":"2007",
+             "code":"2007"
+        },
+        {
+            "Name":"2008",
+             "code":"2008"
+        },
+        {
+            "Name":"2009",
+             "code":"2009"
+        },
+        {
+            "Name":"2010",
+             "code":"2010"
+        },
+        {
+            "Name":"2011",
+             "code":"2011"
+        },
+
+        {
+            "Name":"2012",
+             "code":"2012"
+        },
+        {
+            "Name":"2013",
+             "code":"2013"
+        },
+        {
+            "Name":"2014",
+             "code":"2014"
+        },
+        {
+            "Name":"2015",
+             "code":"2015"
+        },
+        {
+            "Name":"2016",
+             "code":"2016"
+        },
+        {
+            "Name":"2017",
+             "code":"2017"
+        },
+        {
+            "Name":"2018",
+             "code":"2018"
+        }
+
+    ]
+}

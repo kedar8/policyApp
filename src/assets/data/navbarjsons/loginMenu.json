@@ -1,0 +1,89 @@
+[
+  {
+    "text": "Life ",
+    "icon":"fa fa-heart",
+    "children": [
+      {
+        "text": "Investment Plans"
+      },
+      {
+        "text": "Child Plans"
+      },
+      {
+        "text": "Pension plans"
+      },
+      {
+        "text": "Income Tax"
+      }
+    ]
+  },
+  {
+    "text": "Health ",
+    "icon":"fa fa-medkit",
+    "children": [
+      {
+        "text": "Health Plans"
+      },
+      {
+        "text": "Senior Cityzen Plans"
+      },
+      {
+        "text": "Medical Policy plans"
+      },
+      {
+        "text": "Critical Illness"
+      }
+    ]
+  },
+  {
+    "text": "Motor",
+    "icon":"fa fa-motorcycle",
+    "children": [
+      {
+        "text": "Car Insurance"
+      },
+      {
+        "text": "Bike Insurance"
+      }
+    ]
+  },
+  {
+    "text": "Other ",
+    "icon":"fa fa-plus-square",
+    "children": [
+      {
+        "text": "General Insurance"
+      },
+      {
+        "text": "Home Insurance"
+      },
+      {
+        "text": "Personal Insurance"
+      }
+    ]
+  },
+  {
+    "text": "Support",
+    "icon":"fa fa-phone-square",
+    "children": [
+      {
+        "text": " Toll Free No",
+        "label": "18002585970"
+      },
+      {
+        "text": "For NRI",
+        "label": "+911246656507"
+      },
+      {
+        "text": "Ask Questions"
+      },
+      {
+        "text": "Contact US"
+      }
+    ]
+  },
+  {
+    "text": "Sign In  ",
+    "icon":"fa fa-sign-in"
+  }
+]

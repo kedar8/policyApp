@@ -1,0 +1,20 @@
+{
+    "Data":[
+             {
+                 "imgpath":"assets/images/images/a1.png",
+                 "label":"Product:Health Insurance Cover:5,00,000 Primium:21,240(yearly)",
+                 "offer":"Policy_Issued Booking_ID:5382920"
+               
+                 
+             },
+             {
+                "imgpath":"assets/images/images/s1.png",
+                 "label":"Product:Health Insurance Cover:30,000 Primium:21,360(yearly)",
+                 "offer":"Policy_Issued Booking_ID:5388900"
+               
+                 
+             }
+             
+            ]
+        }
+             

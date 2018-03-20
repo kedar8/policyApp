@@ -1,0 +1,157 @@
+
+
+<div  style=" width: 100%;
+height: 100%;
+max-height: 100%;
+margin: 0;
+padding: 0;
+background-image: url('assets/images/logo/login.png');
+background-size:100% 100%;
+background-repeat: no-repeat;">
+<amexio-nav  [title]="'Digital Buzaar'"  [enable-side-nav-position]="true" 
+[logo]="'assets/images/logo/download3.png'">
+
+<amexio-nav-item position-right *ngFor="let loginNav of loginNavData" [icon]="loginNav.icon" [type]="'menu'" [title]="loginNav.text" [data]="loginNav.children"
+  (onNavItemClick)="onLoginNavClick($event)" (navLinkClick)="onLoginNavLinkClick($event)">
+</amexio-nav-item>
+</amexio-nav>
+
+
+
+<!-- ++++++++++++++++++++++++++++++++++__logo/label__+++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<amexio-row>
+  <amexio-column size="12"  style="padding-top: 6%;">
+     
+  
+
+  
+    <!-- ********************************************Login page********************************************* -->
+    <!-- style="background-color:black;color:white " -->
+    <amexio-row>
+      <amexio-column size="2"></amexio-column>
+      <amexio-column size="8"  style="padding-top: 9%;">
+        <amexio-row>
+            <amexio-column size="6" style="background-color:lightslategray;color:white;" >
+              
+              
+              <amexio-card [header]="false"
+                [footer]="false"
+                [footer-align]="'right'">
+
+     <amexio-body>
+       <amexio-row>
+         <amexio-column size="5"> </amexio-column>
+         <amexio-column size="2"  align="center" style="padding-top:7%;">  <amexio-image  path="assets/images/logo/user4.png"></amexio-image>
+         </amexio-column>
+         <amexio-column size="5"> </amexio-column>
+       </amexio-row>
+       
+<amexio-row>
+          <amexio-column size="2"> </amexio-column>
+          <amexio-column size="9"  align="center" >  
+   <amexio-label  size="medium-bold"> MY Account</amexio-label><br/>
+       <amexio-label size="small"> Your Own Online Personal Assistant</amexio-label><br/>
+       <amexio-label size="small"> View Policy Details</amexio-label><br/>
+       <amexio-label size="small"> Raise Queries</amexio-label><br/>
+       <amexio-label size="small"> See Your recent Searches</amexio-label><br/>
+       <amexio-label size="small"> Upload Documents</amexio-label><br/>
+       <amexio-label size="small"> Customer Care</amexio-label><br/>
+       <amexio-label size="small"> Reviews & Feedback</amexio-label>
+      </amexio-column>
+       <amexio-column size="1"> </amexio-column>
+</amexio-row>
+
+
+     </amexio-body>
+   </amexio-card>
+  </amexio-column>
+  <!-- second Column Login page -->
+  <amexio-column size="6" style="background-color:lightslategray;color:royalblue;">
+    <amexio-card [header]="false"
+    [footer]="false"
+    [footer-align]="'center'">
+<amexio-body>
+  <!--++++++++++++++++++++++++++++++++ country row+++++++++++++++++++++++ -->
+<amexio-row>
+  <amexio-column size="3" style="padding-top:20%;color:blue;" > <amexio-label size="medium-bold">Country </amexio-label>
+  </amexio-column>
+  <amexio-column size="9"  style="padding-top:10%;">
+    
+<!--Simple dropdown filter with http url-->
+<amexio-dropdown [(ngModel)]="loginObject.countryCode"
+                 [place-holder]="'Choose Country'"
+                 name="loginObject.countryCode"
+                 [search]="true"
+                 [data-reader]="'data'"
+                 [http-url]="'assets/data/country.json'"
+                 [http-method]="'get'"
+                 [display-field]="'countryName'"
+                 [value-field]="'countryCode'"
+                 (onSingleSelect)="onCountryClick($event)">
+</amexio-dropdown>
+</amexio-column>
+</amexio-row>
+<!--  +++++++++++++++++++++++++++++ Mobile row ++++++++++++++++++++++++ -->
+<amexio-row>
+    <amexio-column size="3" style="padding-top:10%;color:blue;"> <amexio-label size="medium-bold">Mobile </amexio-label>
+    </amexio-column>
+<amexio-column size="9">
+  <amexio-row>
+    <amexio-column size="3">
+       <amexio-text-input 
+      [(ngModel)]="loginObject.countryCode"
+     
+      name="loginObject.countryCode"
+      [place-holder]="'Country Code'" >
+  </amexio-text-input></amexio-column>
+
+    <amexio-column size="9">
+
+        <amexio-number-input
+       
+        [(ngModel)]="loginObject.mobileNo"
+          [name]="'loginObject.mobileNo'" 
+          [place-holder]="'Enter Mobile Number'">
+        
+        </amexio-number-input>
+    </amexio-column>
+    
+  </amexio-row>
+  
+</amexio-column>
+</amexio-row>
+
+
+<!-- ++++++++++++++++++++++++++++++++++ Proceed button +++++++++++++++++ -->
+
+<amexio-row>
+  <amexio-column size="3"></amexio-column>
+  <amexio-column size="7" style="color:red;padding-top:3%;">Please Enter Valid Mobile Number  </amexio-column>
+  <amexio-column size="2"></amexio-column>
+</amexio-row>
+
+<amexio-row>
+    <amexio-column size="5"  ></amexio-column>
+<amexio-column size="3"style="padding-top:4%;">
+   <amexio-button [label]="'Proceed'"  [icon]="'fa fa-chevron-circle-right'" [type]="'primary'" (onClick)="onProceedClick($event)" >
+</amexio-button>
+      <amexio-column size="4"></amexio-column>
+</amexio-column>
+</amexio-row>
+
+</amexio-body>
+</amexio-card>
+</amexio-column>
+            </amexio-row>
+          </amexio-column>
+            <amexio-column size="2"></amexio-column>
+
+
+    </amexio-row>
+    
+
+
+  </amexio-column>
+</amexio-row>
+</div>

@@ -1,0 +1,28 @@
+
+   <amexio-nav   [title]="'Digital Buzaar'"  [enable-side-nav-position]="true" 
+   [logo]="'assets/images/logo/download3.png'">
+  
+   <amexio-nav-item position-right *ngFor="let mainNav of topMainData" [type]="'menu'"  [icon]="mainNav.icon" [title]="mainNav.text" [data]="mainNav.children"
+     (onNavItemClick)="onMainNavClick($event)">
+   </amexio-nav-item>
+ </amexio-nav>
+
+<amexio-row  >
+         <amexio-column [size]="'2pt5'" style="padding-top: 68px;">
+                             <amexio-side-nav
+                             [http-url]="'assets/data/dashSideBar.json'"
+                              [http-method]="'get'"
+                             [data-reader]="'data'"
+                          
+                             [height]="'92%'"
+                             (nodeClick)="onNodeClick($event)">
+                           </amexio-side-nav>
+                         </amexio-column>
+                       
+             <amexio-column [size]="'9pt5'" style=" -top: 68px;">
+               
+                        <router-outlet></router-outlet>
+                      
+              </amexio-column>  
+         
+     </amexio-row>

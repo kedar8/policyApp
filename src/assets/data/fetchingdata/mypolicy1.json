@@ -1,0 +1,49 @@
+{
+    "Data":[
+             {
+                 "imgpath":"assets/images/images/a1.png",
+                 "label":"Product:Health Insurance Cover:5,00,000 Primium:21,240(yearly)",
+                 "offer":"Policy_Issued Booking_ID:4722920"
+               
+                 
+             },
+             {
+                "imgpath":"assets/images/images/a1.png",
+                 "label":"Product:Health Insurance Cover:30,000 Primium:21,360(yearly)",
+                 "offer":"Policy_Issued Booking_ID:2222900"
+               
+                 
+             },
+             {
+                 "imgpath":"assets/images/images/s1.png",
+                 "label":"Product:Health Insurance Cover:51,00,000 Primium:21,240(yearly)",
+                 "offer":"Policy_Issued Booking_ID:4982920"
+               
+                 
+             },
+             {
+                "imgpath":"assets/images/images/a1.png",
+                 "label":"Product:Health Insurance Cover:40,000 Primium:21,360(yearly)",
+                 "offer":"Policy_Issued Booking_ID:6888900"
+               
+                 
+             },
+             {
+                 "imgpath":"assets/images/images/s1.png",
+                 "label":"Product:Health Insurance Cover:65,00,000 Primium:21,240(yearly)",
+                 "offer":"Policy_Issued Booking_ID:1082920"
+               
+                 
+             },
+             {
+                "imgpath":"assets/images/images/a1.png",
+                 "label":"Product:Health Insurance Cover:89,000 Primium:21,360(yearly)",
+                 "offer":"Policy_Issued Booking_ID:1288900"
+               
+                 
+             }
+             
+             
+            ]
+        }
+             

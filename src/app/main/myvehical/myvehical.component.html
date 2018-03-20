@@ -1,0 +1,209 @@
+<amexio-row>
+<amexio-column size="8" style="padding-top:7%" >
+<amexio-card [header]="true"
+>
+<amexio-header>
+    Add New Vehical
+</amexio-header>
+<amexio-body>
+
+        <amexio-row>
+
+
+        <amexio-column size="6">
+<amexio-dropdown
+                    [place-holder]="'select'"
+                    [field-label]="'Vehical Type'"
+                    [http-method]="'get'"
+                    [http-url]="'assets/data/fetchingdata/myvehical1.json'"
+                    [display-field]="'Name'"
+                    [value-field]="'code'"
+                    [data-reader]="'data'"
+            
+                    (onSingleSelect)="'onSingleSelectValue($event)'">
+</amexio-dropdown>
+</amexio-column>
+
+<amexio-column size="6">
+
+    <amexio-dropdown
+    [place-holder]="'select'"
+    [field-label]="'Vehical Model*'"
+    [http-method]="'get'"
+    [http-url]="'assets/data/fetchingdata/myvehical1.json'"
+    [display-field]="'Name'"
+    [value-field]="'code'"
+    [data-reader]="'VehicalModel'"
+
+    (onSingleSelect)="'onSingleSelectValue($event)'">
+</amexio-dropdown>
+</amexio-column>
+
+
+    </amexio-row>
+
+<!-- !!!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!!! -->
+    <amexio-row>
+
+
+            
+                    <amexio-column size="6">
+
+                            <amexio-dropdown
+                            [place-holder]="'select'"
+                            [field-label]="'Vehical Make*'"
+                            [http-method]="'get'"
+                            [http-url]="'assets/data/fetchingdata/myvehical1.json'"
+                            [display-field]="'Name'"
+                            [value-field]="'code'"
+                            [data-reader]="'VehicalName'"
+                    
+                            (onSingleSelect)="'onSingleSelectValue($event)'">
+        </amexio-dropdown>
+</amexio-column>
+                   
+
+<amexio-column size="6">
+    <amexio-text-input 
+    [field-label]="'Reg No*'"
+   [place-holder]="'AA OO AA OOOO  '"
+   [icon-feedback]="true"
+   [font-size]="'small'">
+</amexio-text-input>
+</amexio-column>
+</amexio-row>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+<amexio-row>
+
+
+        
+                <amexio-column size="6">
+        <amexio-dropdown
+                            [place-holder]="'select'"
+                            [field-label]="'Vehical Varient*'"
+                            [http-method]="'get'"
+                            [http-url]="'assets/data/fetchingdata/myvehical1.json'"
+                            [display-field]="'Name'"
+                            [value-field]="'code'"
+                            [data-reader]="'VehicalVarient'"
+                    
+                            (onSingleSelect)="'onSingleSelectValue($event)'">
+        </amexio-dropdown>
+        </amexio-column>
+        
+        
+                
+        
+            <amexio-column size="6">
+                <amexio-text-input 
+                [field-label]="'Fuel Type*'"
+               [place-holder]="'Petrol '"
+               [icon-feedback]="true"
+               [font-size]="'small'">
+        </amexio-text-input>
+        </amexio-column>
+        
+            </amexio-row>
+            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+
+            <amexio-row>
+
+          <amexio-column size="6">
+                    <amexio-dropdown
+                                        [place-holder]="'select'"
+                                        [field-label]="'Reg Year*'"
+                                        [http-method]="'get'"
+                                        [http-url]="'assets/data/fetchingdata/myvehical1.json'"
+                                        [display-field]="'Name'"
+                                        [value-field]="'code'"
+                                        [data-reader]="'SelectYear'"
+                                
+                                        (onSingleSelect)="'onSingleSelectValue($event)'">
+                    </amexio-dropdown>
+                    </amexio-column>
+
+
+                            <amexio-column size="6">
+                    <amexio-date-time-picker
+                    [field-label]="'Expiry Date*'"
+                     [time-picker]="false"
+                     [date-picker]="true"
+                     >
+                   </amexio-date-time-picker>
+                     
+                   </amexio-column>
+                   
+                    </amexio-row>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+<amexio-row  >
+        <amexio-column size="4"></amexio-column>
+        <amexio-column size="2" style="padding-top:6%"><amexio-button label="Submit" [icon]="'	fa fa-hand-o-right'"[block]="true" type="primary">
+
+        </amexio-button></amexio-column>
+        <amexio-column size="2" style="padding-top:6%"><amexio-button label="Cancel"[icon]="'	fa fa-close'" [block]="true" type="primary">
+
+            </amexio-button></amexio-column>
+        <amexio-column size="4"></amexio-column>
+        
+    </amexio-row>
+
+
+            
+</amexio-body>
+</amexio-card>
+<amexio-row >
+        <amexio-column size="12" style="padding-top:25%">
+<amexio-label size=""style="padding-top:5%">“Disclaimer: The information displayed on My Account is only for information sake and are updates to the customer as received from the Insurer and Policybazaar shall not be liable and/or responsible for the accuracy, completeness, legality, or reliability of the information contained in this My Account section.”</amexio-label>
+</amexio-column>
+</amexio-row>  
+
+</amexio-column>
+
+
+
+
+
+<!-- ```````````````````` 2nd column started 4 ``````````````````````````` -->
+<amexio-column size="4" style="padding-top:7%">
+    
+    
+        <amexio-card >
+                <amexio-body>
+                        <amexio-row>
+                                <amexio-column size="1"></amexio-column>
+                                <amexio-column size="10">
+                                    
+                        <amexio-image path="assets/images/images/mypolicy1.png"></amexio-image>
+                                   
+                                            <amexio-button [label]="'Show Details'" [icon]="'fa fa-caret-square-o-right'" [block]=true [type]="'warning'"></amexio-button>
+                 
+                                 
+                                        </amexio-column>
+                                        <amexio-column size="1"></amexio-column>
+                                    </amexio-row>
+                          </amexio-body>
+
+            </amexio-card>
+            <amexio-card >
+                    <amexio-body>
+                            <amexio-row>
+                                    <amexio-column size="1"></amexio-column>
+                                    <amexio-column size="10">
+                                        
+       <amexio-image path="assets/images/images/m.png"></amexio-image>
+                    
+                 </amexio-column>
+                 <amexio-column size="1"></amexio-column>
+                 </amexio-row>
+
+         </amexio-body>
+
+   </amexio-card>
+    
+      
+    </amexio-column>
+
+</amexio-row>

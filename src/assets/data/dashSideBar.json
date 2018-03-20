@@ -1,0 +1,62 @@
+
+
+{
+  "data": [
+    {
+      "text": "Dashboard",
+      "icon":"fa fa-tachometer",
+      "link": "main/dashboard",
+      "select": true
+    },
+    {
+      "text": "My Policies",
+      "icon":"fa fa-file-text-o",
+      "link": "main/mypolicy",
+      "select": true
+    },
+    {
+      "text": "My Searches",
+      "icon":"fa fa-search",
+      "link": "main/mysearch",
+      "select": true
+    },
+    {
+      "text": "Help",
+      "icon":"fa fa-handshake-o",
+      "link": "main/help",
+      "select": true
+    },
+    {
+      "text": "My Vehical",
+      "icon":"fa fa-car",
+      "link": "main/myvehical",
+      "select": true
+    },
+    {
+    "text": "Quick Links",
+    "icon":"fa fa-link",
+    "link": "main/quiclinks",
+    
+    "children": [
+          {
+            "text": "Garage Locator",
+            "icon":"fa fa-map-marker",
+            "link": "main/garagelocator"
+          },
+          {
+            "text": "Car Claim Assistance", 
+            "icon":"fa fa-arrow-circle-right",
+            "link": "main/carclaimassistance"
+          },
+          {
+            "text": "Renew Life Policy",
+            "icon":"fa fa-refresh",
+            "link": "main/renewifepolicy"
+          }
+          
+        ]
+      }
+     
+    ]
+  }
+   

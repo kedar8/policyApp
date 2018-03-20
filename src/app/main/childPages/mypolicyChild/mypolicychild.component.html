@@ -1,0 +1,160 @@
+<amexio-row>
+    <amexio-column size="12">
+       
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`` 1 st row~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` -->
+<amexio-row>
+    <amexio-column size="2"> <amexio-button [block]=true [label]="'Health Insurance'" [icon]="'fa fa-medkit'" [size]="'small'"  
+        [type]="'success'" > </amexio-button>
+    </amexio-column>
+    <amexio-column size="10"> <amexio-button [block]=true [label]="'Star Health -Senior Citizen Red Carpet'"  [size]="'small'"  
+         [type]="'secondary'" > </amexio-button>
+    </amexio-column>
+</amexio-row>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 2nd row ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<amexio-row>
+    <amexio-column size="12">
+            <amexio-datagrid  
+            [http-method]="'get'"
+            [http-url]="'assets/data/fetchingdata/policychild1.json'"
+            [data-reader]="'Data'"
+            [page-size] = "10"
+            [enable-data-filter]="false"
+            (rowSelect)="'getRowData($event)'">
+
+            <amexio-data-table-column [width]="30"
+                          [data-index]="'Name'"        
+                      [data-type]="'string'"
+                      [hidden]="false"
+                      [text]="'NAME'">
+    </amexio-data-table-column>
+    <amexio-data-table-column [width]="30"
+                     [data-index]="'Sum_Assured'"
+                      [data-type]="'string'"
+                      [hidden]="false"
+                      [text]="'SUM ASSURED'">
+    </amexio-data-table-column>
+    <amexio-data-table-column [width]="30"
+                      [data-index]="'Primium'"
+                      [data-type]="'string'"
+                      [hidden]="false"
+                      [text]="'PRIMIUM'">
+    </amexio-data-table-column>
+
+<!-- BUTTON ADD KARNAE -->
+
+<!-- <ng-template #amexioBodyTmpl let-column let-row="row">
+        <span>
+      <amexio-button [block]=true [label]="'FEEDBACK'"  [size]="'small'"   [type]="'danger'" > </amexio-button>
+       
+          
+      </span>
+  </ng-template> -->
+
+    </amexio-datagrid>
+</amexio-column>
+</amexio-row>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 3rd row~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` -->
+
+
+<amexio-row>
+        <amexio-column size="12">
+                <amexio-row>
+                        <amexio-column size="12">
+                        
+                          <amexio-steps [block]="true"
+                                        [icon]="true"
+                                        (onClick)="stepBlockClick($event)">
+                            <amexio-step-block [label]="'TrackStatus'"
+                                               [active]="trackstatus"
+                                               [icon]="'fa fa-user'"
+                                               >
+                            </amexio-step-block>
+                            <amexio-step-block [label]="'Help'"
+                                               [active]="help"
+                                               [icon]="'fa fa-handshake-o'"
+                                              >
+                            </amexio-step-block>
+                            <amexio-step-block [label]="'Feedback'"
+                                               [active]="feedback"
+                                               [icon]="'fa fa-comments'"
+                                              >
+                            </amexio-step-block>
+                           
+                          </amexio-steps>
+                        </amexio-column>
+                      </amexio-row>
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ track status ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+                      <ng-container *ngIf="trackstatus" >
+                            <amexio-column size="12" >
+                            <amexio-card [header]="true"
+                            [footer]="true"
+                            [footer-align]="'right'"
+                            [header-align]="'left'"  >
+                    <amexio-header>
+                   track Details
+                    </amexio-header>
+                    <amexio-body >
+                            <amexio-label size="small-bold"> Track status.......</amexio-label><br/>
+                    </amexio-body>
+                    <amexio-action>
+                    <amexio-button [label]="'NEXT track'" [type]="'primary'" (onClick)="nextAdd($event)"></amexio-button>
+                    </amexio-action>
+                    </amexio-card>
+                    </amexio-column>
+                        </ng-container>
+
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help ^^^^^^^^^^^^^^^^^^^^ -->
+<ng-container *ngIf="help" >
+    <amexio-column size="12" >
+    <amexio-card [header]="true"
+    [footer]="true"
+    [footer-align]="'right'"
+    [header-align]="'left'"  >
+<amexio-header>
+help Details
+</amexio-header>
+<amexio-body >
+        <amexio-label size="small-bold"> help.......</amexio-label><br/>
+</amexio-body>
+<amexio-action>
+<amexio-button [label]="'NEXT help'" [type]="'primary'" (onClick)="nextPay($event)"></amexio-button>
+</amexio-action>
+</amexio-card>
+</amexio-column>
+</ng-container>
+<!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ feedback ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^6 -->
+<ng-container *ngIf="feedback" >
+    <amexio-column size="12" >
+    <amexio-card [header]="true"
+    [footer]="true"
+    [footer-align]="'right'"
+    [header-align]="'left'"  >
+<amexio-header>
+feedback Details
+</amexio-header>
+<amexio-body >
+        <amexio-label size="small-bold"> Track status.......</amexio-label><br/>
+</amexio-body>
+<amexio-action>
+<amexio-button [label]="'Next feedback'" [type]="'primary'"(onClick)="nextBack($event)" ></amexio-button>
+</amexio-action>
+</amexio-card>
+</amexio-column>
+</ng-container>
+  </amexio-column>
+  </amexio-row>    
+
+
+  <amexio-row>
+        <amexio-column size="12">
+            <amexio-label size="small-bold">Policy Issued</amexio-label><br/>
+            <amexio-label size="small">Congratulations! Your start Health Insurance policy has been issued & a soft copy is shared on your registered email ID.</amexio-label><br/>
+            
+            </amexio-column>
+            </amexio-row>
+
+            </amexio-column>
+            </amexio-row>

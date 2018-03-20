@@ -1,0 +1,561 @@
+
+
+
+<amexio-row>
+    <amexio-column size="12" style="padding-top:7%" >
+
+
+      <!-- ******************** Tab ************** -->
+      <amexio-row>
+          <amexio-column size="12">
+            <amexio-tab-view [closable]="false">
+              <amexio-tab title="2017 Year" [active]="true" [icon]="'fa fa-sign-in'">
+                <!-- ******************Tab 1 2017 ************** -->
+            
+<!-- ********************** 1st row ************************************ -->
+
+<amexio-row>
+    <amexio-column size="8">
+            <!--^^^^^^^^^^^^^^^^^^^^^^^ 1 st grid view^^^^^^^^^^^^^^^^^^  -->
+            <amexio-card >
+                   <amexio-body>
+                       <amexio-row>
+                           <amexio-column size="12">
+                        <amexio-datagrid  
+                        [http-method]="'get'"
+                        [http-url]="'assets/data/fetchingdata/mypolicy1.json'"
+                        [data-reader]="'Data'"
+                        [page-size] = "10"
+                        [enable-data-filter]="false"
+                        (rowSelect)="getRowData1($event)">
+    <amexio-data-table-column [width]="30"
+                                 
+                                  [data-type]="'string'"
+                                  [hidden]="false"
+                                  [text]="'PLAN'">
+     <ng-template #amexioBodyTmpl let-column let-row="row">
+            <span>
+              <amexio-image [path]="row.imgpath">
+              </amexio-image>
+            </span>
+          </ng-template>
+        </amexio-data-table-column>
+<amexio-data-table-column [width]="30"
+                                  [data-index]="'label'"
+                                  [data-type]="'string'"
+                                  [hidden]="false"
+                                  [text]="'DETAILS'">
+        </amexio-data-table-column>
+<amexio-data-table-column [width]="30"
+                                  [data-index]="'offer'"
+                                  [data-type]="'string'"
+                                  [hidden]="false"
+                                  [text]="'STATUS'">
+        </amexio-data-table-column>
+         <amexio-data-table-column [width]="30"
+                                 
+                                  [data-type]="'string'"
+         [hidden]="false"
+   [text]="'ACTION'">
+
+          <ng-template #amexioBodyTmpl let-column let-row="row">
+                                        <span>
+                   <amexio-button [block]=true [label]="'FEEDBACK'" [icon]="'fa fa-comments'" [size]="'small'"   [type]="'danger'" > </amexio-button>
+                      <amexio-button [block]=true [label]="'HELP '" [icon]="'fa fa-handshake-o'"  [size]="'small'"  [type]="'secondary'" > </amexio-button>
+                                       
+                                          
+           </span>
+          </ng-template>
+                                 
+        </amexio-data-table-column>
+      </amexio-datagrid>
+      </amexio-column>
+    </amexio-row>
+                        </amexio-body>
+                </amexio-card>
+                      
+    </amexio-column>
+    
+    
+    <amexio-column size="4">
+    
+        <amexio-card >
+            <amexio-body>
+                    <amexio-row>
+                            <amexio-column size="1"></amexio-column>
+                            <amexio-column size="10">
+                                
+                    <amexio-image path="assets/images/images/mypolicy1.png"></amexio-image>
+                               
+                                        <amexio-button [label]="'Show Details'" [icon]="'fa fa-caret-square-o-right'" [block]=true [type]="'warning'"></amexio-button>
+             
+                             
+                                    </amexio-column>
+                                    <amexio-column size="1"></amexio-column>
+                                </amexio-row>
+                      </amexio-body>
+
+        </amexio-card>
+            <!-- ))))))))))))))))))))))))))) -->
+            <amexio-card [header]="true"
+      
+            [header-align]="'left'">
+        <amexio-header>
+            POLICY WALLET
+        </amexio-header>
+                <amexio-body >
+                 <amexio-row>
+                   
+                      
+                        <amexio-column size="12">
+                            <amexio-label size="" >Upload all your policies (even if not bought from Policybazaar) and have them accessible from one place.</amexio-label>
+                            <amexio-dropdown
+                            [place-holder]="'Choose'"
+                            [field-label]="'Choose policy'"
+                            [http-method]="'get'" 
+                            [http-url]="'assets/data/policywallet.json'"
+                            [display-field]="'policyName'"
+                             [value-field]="'code'"
+                            [data-reader]="'data'"
+                        
+                            (onMultiSelect)="'onMultiSelectValue($event)'">
+                          </amexio-dropdown>
+    
+    
+                          <amexio-button [block]=true [label]="'UPLOAD'" [icon]="'fa fa-arrow-circle-up'"   [type]="'primary'" > </amexio-button>
+                            
+                        </amexio-column>
+                      
+                     
+                 </amexio-row>
+                </amexio-body>  
+               
+              </amexio-card>
+        <!-- )))))))))))))))))))))))))))))) -->
+        <amexio-card [header]="true"
+       
+        [header-align]="'left'">
+    <amexio-header>
+        CAR RENEWAL REMINDER
+    </amexio-header>
+            <amexio-body >
+             <amexio-row>
+               
+                  
+                    <amexio-column size="12">
+                        <amexio-date-time-picker
+                        [field-label]="'Policy Expiry Date'"
+                        [time-picker]="false"
+                        [date-picker]="true"
+                       >
+                      </amexio-date-time-picker>
+                      <amexio-button [block]=true [label]="'SUBMIT'" [icon]="'fa fa-hand-o-right'"   [type]="'success'" > </amexio-button>
+                        
+                    </amexio-column>
+             </amexio-row>
+            </amexio-body>
+           
+          </amexio-card>
+      
+    </amexio-column>
+    </amexio-row>
+  </amexio-tab>
+
+ <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>(((2nds tab)))>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+              <amexio-tab title="2018 Year" [active]="false"  [icon]="'fa fa-sign-out'">
+           <!-- ********************** 1st row ************************************ -->
+
+<amexio-row>
+    <amexio-column size="8">
+            <!--^^^^^^^^^^^^^^^^^^^^^^^ 1 st grid view^^^^^^^^^^^^^^^^^^  -->
+            <amexio-card >
+                   <amexio-body>
+                       <amexio-row>
+                           <amexio-column size="12">
+                        <amexio-datagrid  
+                        [http-method]="'get'"
+                        [http-url]="'assets/data/fetchingdata/mypolicy3.json'"
+                        [data-reader]="'Data'"
+                        [page-size] = "10"
+                        [enable-data-filter]="false"
+                        (rowSelect)="getRowData2($event)">
+    <amexio-data-table-column [width]="30"
+                                 
+                                  [data-type]="'string'"
+                                  [hidden]="false"
+                                  [text]="'PLAN'">
+     <ng-template #amexioBodyTmpl let-column let-row="row">
+            <span>
+              <amexio-image [path]="row.imgpath">
+              </amexio-image>
+            </span>
+          </ng-template>
+        </amexio-data-table-column>
+<amexio-data-table-column [width]="30"
+                                  [data-index]="'label'"
+                                  [data-type]="'string'"
+                                  [hidden]="false"
+                                  [text]="'DETAILS'">
+        </amexio-data-table-column>
+<amexio-data-table-column [width]="30"
+                                  [data-index]="'offer'"
+                                  [data-type]="'string'"
+                                  [hidden]="false"
+                                  [text]="'STATUS'">
+        </amexio-data-table-column>
+         <amexio-data-table-column [width]="30"
+                                 
+                                  [data-type]="'string'"
+         [hidden]="false"
+   [text]="'ACTION'">
+
+          <ng-template #amexioBodyTmpl let-column let-row="row">
+                                        <span>
+                   <amexio-button [block]=true [label]="'FEEDBACK'"[icon]="'fa fa-comments'"   [size]="'small'"   [type]="'danger'" > </amexio-button>
+                      <amexio-button [block]=true [label]="'HELP '" [icon]="'fa fa-handshake-o'"   [size]="'small'"  [type]="'secondary'" > </amexio-button>
+                                       
+                                          
+           </span>
+          </ng-template>
+                                 
+        </amexio-data-table-column>
+      </amexio-datagrid>
+      </amexio-column>
+    </amexio-row>
+                        </amexio-body>
+                </amexio-card>
+                      
+    </amexio-column>
+    
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~ this is column 4 for images~~~~~~~~~~~~~~~~~~~~~~~~` -->
+    
+    <amexio-column size="4">
+        <amexio-card >
+            <amexio-body>
+                    <amexio-row>
+                            <amexio-column size="1"></amexio-column>
+                            <amexio-column size="10">
+                                
+                    <amexio-image path="assets/images/images/mypolicy1.png"></amexio-image>
+                               
+                                        <amexio-button [label]="'Show Details'" [icon]="'fa fa-caret-square-o-right'" [block]=true [type]="'warning'"></amexio-button>
+             
+                             
+                                    </amexio-column>
+                                    <amexio-column size="1"></amexio-column>
+                                </amexio-row>
+                      </amexio-body>
+
+        </amexio-card>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <amexio-card [header]="true"
+      
+            [header-align]="'left'">
+        <amexio-header>
+            POLICY WALLET
+        </amexio-header>
+                <amexio-body >
+                 <amexio-row>
+                      
+                        <amexio-column size="12">
+                            <amexio-label size="" >Upload all your policies (even if not bought from Policybazaar) and have them accessible from one place.</amexio-label>
+                            <amexio-dropdown
+                            [place-holder]="'Choose'"
+                            [field-label]="'Choose policy'"
+                            [http-method]="'get'" 
+                            [http-url]="'assets/data/policywallet.json'"
+                            [display-field]="'policyName'"
+                             [value-field]="'code'"
+                            [data-reader]="'data'"
+                        
+                            (onMultiSelect)="'onMultiSelectValue($event)'">
+                          </amexio-dropdown>
+    
+    
+                          <amexio-button [block]=true [label]="'UPLOAD'" [icon]="'fa fa-arrow-circle-up'"   [type]="'primary'" > </amexio-button>
+                            
+                        </amexio-column>
+                      
+                     
+                 </amexio-row>
+                </amexio-body>  
+               
+              </amexio-card>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <amexio-card [header]="true"
+       
+        [header-align]="'left'">
+    <amexio-header>
+        CAR RENEWAL REMINDER
+    </amexio-header>
+            <amexio-body >
+             <amexio-row>
+               
+                  
+                    <amexio-column size="12">
+                        <amexio-date-time-picker
+                        [field-label]="'Policy Expiry Date'"
+                        [time-picker]="false"
+                        [date-picker]="true"
+                       >
+                      </amexio-date-time-picker>
+                      <amexio-button [block]=true [label]="'SUBMIT'" [icon]="'fa fa-hand-o-right'"   [type]="'success'" > </amexio-button>
+                        
+                    </amexio-column>
+                  
+                 
+             </amexio-row>
+            </amexio-body>
+           
+          </amexio-card>
+      
+    </amexio-column>
+    
+    
+    
+    </amexio-row>
+              </amexio-tab>
+
+
+            </amexio-tab-view>
+        
+          </amexio-column>
+        </amexio-row>
+
+    
+  <!-- ******************* end full page ****************** -->
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ window code it is based on click of the row~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <!-- :::::::::::::::::::::::::::::::::::::: window Code ::::::::::::::::::::::::::::::::::::::::: -->
+    
+<amexio-row>
+    <amexio-column size="12">
+            <amexio-window [show-window]="showMaxWindow"
+                           [closable]="true"
+                           type="window"
+                           [footer]="true"
+                           [body-height]="90"
+                          >
+                  <amexio-header>
+                    Employee Form
+                  </amexio-header>
+                  <amexio-body>
+
+                      <amexio-row>
+                          <amexio-column size="12">
+                             
+                             
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`` 1 st row~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` -->
+<amexio-row>
+    <amexio-column size="2"> <amexio-button [block]=true [label]="'Health Insurance'" [icon]="'fa fa-medkit'" [size]="'small'"  
+        [type]="'success'" > </amexio-button>
+    </amexio-column>
+    <amexio-column size="10"> <amexio-button [block]=true [label]="'Star Health -Senior Citizen Red Carpet'"  [size]="'small'"  
+         [type]="'warning'" > </amexio-button>
+    </amexio-column>
+</amexio-row>
+
+
+                      
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 2nd row ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<amexio-row>
+    <amexio-column size="12">
+            <amexio-datagrid  
+            [http-method]="'get'"
+            [http-url]="'assets/data/fetchingdata/policychild1.json'"
+            [data-reader]="'Data'"
+            [page-size] = "10"
+            [enable-data-filter]="false"
+            (rowSelect)="'getRowData($event)'">
+
+            <amexio-data-table-column [width]="30"
+                          [data-index]="'Name'"        
+                      [data-type]="'string'"
+                      [hidden]="false"
+                      [text]="'NAME'">
+    </amexio-data-table-column>
+    <amexio-data-table-column [width]="30"
+                     [data-index]="'Sum_Assured'"
+                      [data-type]="'string'"
+                      [hidden]="false"
+                      [text]="'SUM ASSURED'">
+    </amexio-data-table-column>
+    <amexio-data-table-column [width]="30"
+                      [data-index]="'Primium'"
+                      [data-type]="'string'"
+                      [hidden]="false"
+                      [text]="'PRIMIUM'">
+    </amexio-data-table-column>
+
+<!-- BUTTON ADD KARNAE -->
+
+<!-- <ng-template #amexioBodyTmpl let-column let-row="row">
+        <span>
+      <amexio-button [block]=true [label]="'FEEDBACK'"  [size]="'small'"   [type]="'danger'" > </amexio-button>
+       
+          
+      </span>
+  </ng-template> -->
+
+    </amexio-datagrid>
+</amexio-column>
+</amexio-row>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 3rd row~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` -->
+
+                      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ json data of the cutomer and text field~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   
+                      <amexio-row>
+                          <amexio-column size="12">
+                              <amexio-card [header]="true" >
+                                <amexio-header>Booking Details</amexio-header>
+                          <amexio-body >
+                             
+                              <amexio-row>
+                                  <ng-container *ngFor= "let data of policyData ">
+
+                             
+                                  <amexio-row>
+                                    <amexio-column [size]="12">
+                                        <amexio-text-input [field-label]="data.key" disabled="true"
+                                        [(ngModel)]="data.value"
+                                     
+                                       [font-size]="'large'">
+                                       </amexio-text-input>
+                                   
+                                    </amexio-column>
+                                   
+                                   
+                                  </amexio-row>
+                       
+                          
+                        </ng-container>
+                          </amexio-row>
+                      
+                           </amexio-body>
+                           </amexio-card>
+                      </amexio-column>
+                      </amexio-row>
+
+
+
+                      <!-- ````````````````````````````````````````` step block ```````````````````````````````````````` -->
+                    
+
+<amexio-row>
+    <amexio-column size="12">
+            <amexio-row>
+                    <amexio-column size="12">
+                    
+                      <amexio-steps [block]="true"
+                                    [icon]="true"
+                                    (onClick)="stepBlockClick($event)">
+                        <amexio-step-block [label]="'TrackStatus'"
+                                           [active]="trackstatus"
+                                           [icon]="'fa fa-user'"
+                                           >
+                        </amexio-step-block>
+                        <amexio-step-block [label]="'Help'"
+                                           [active]="help"
+                                           [icon]="'fa fa-handshake-o'"
+                                          >
+                        </amexio-step-block>
+                        <amexio-step-block [label]="'Feedback'"
+                                           [active]="feedback"
+                                           [icon]="'fa fa-comments'"
+                                          >
+                        </amexio-step-block>
+                       
+                      </amexio-steps>
+                    </amexio-column>
+                  </amexio-row>  
+<!-- if u want the full work then removen the below ``1 column and 1 row ...that is changes -->
+                  </amexio-column>
+                  </amexio-row>
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ track status ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+                <!--  <ng-container *ngIf="trackstatus" >
+                        <amexio-column size="12" >
+                        <amexio-card [header]="true"
+                        [footer]="true"
+                        [footer-align]="'right'"
+                        [header-align]="'left'"  >
+                <amexio-header>
+               track Details
+                </amexio-header>
+                <amexio-body >
+                        <amexio-label size="small-bold"> Track status.......</amexio-label><br/>
+                </amexio-body>
+                <amexio-action>
+                <amexio-button [label]="'NEXT track'" [type]="'primary'" (onClick)="nextAdd($event)"></amexio-button>
+                </amexio-action>
+                </amexio-card>
+                </amexio-column>
+                    </ng-container> -->
+
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help ^^^^^^^^^^^^^^^^^^^^ -->
+<!-- <ng-container *ngIf="help" >
+<amexio-column size="12" >
+<amexio-card [header]="true"
+[footer]="true"
+[footer-align]="'right'"
+[header-align]="'left'"  >
+<amexio-header>
+help Details
+</amexio-header>
+<amexio-body >
+    <amexio-label size="small-bold"> help.......</amexio-label><br/>
+</amexio-body>
+<amexio-action>
+<amexio-button [label]="'NEXT help'" [type]="'primary'" (onClick)="nextPay($event)"></amexio-button>
+</amexio-action>
+</amexio-card>
+</amexio-column>
+</ng-container> -->
+<!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ feedback ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^6 -->
+
+<!--
+<ng-container *ngIf="feedback" >
+<amexio-column size="12" >
+<amexio-card [header]="true"
+[footer]="true"
+[footer-align]="'right'"
+[header-align]="'left'"  >
+<amexio-header>
+feedback Details
+</amexio-header>
+<amexio-body >
+    <amexio-label size="small-bold"> Track status.......</amexio-label><br/>
+</amexio-body>
+<amexio-action>
+<amexio-button [label]="'Next feedback'" [type]="'primary'"(onClick)="nextBack($event)" ></amexio-button>
+</amexio-action>
+</amexio-card>
+</amexio-column>
+</ng-container>
+</amexio-column>
+</amexio-row>     -->
+
+                      
+                      <!-- ~~~~~~~~~~~~~~~~~~~ 4 row ~~~~~~~~~~~~~~~~-->
+                        <amexio-row>
+                              <amexio-column size="12">
+                                  <amexio-label size="small-bold">Policy Issued</amexio-label><br/>
+                                  <amexio-label size="small">Congratulations! Your start Health Insurance policy has been issued & a soft copy is shared on your registered email ID.</amexio-label><br/>
+                                  
+                                  </amexio-column>
+                                  </amexio-row>
+                      
+                                  </amexio-column>
+                                  </amexio-row>
+                    </amexio-body>
+                    
+            </amexio-window>
+        </amexio-column>
+      </amexio-row>
+
+        
+</amexio-column>
+</amexio-row>  

@@ -1,0 +1,38 @@
+{
+  "data": [
+    {"policyName": "Select","code": "Select","checked":false},
+    {"policyName": "Child Plans","code": "Child Plans","checked":false},
+    {"policyName": "Pension plans","code": "Pension plans","checked":false},
+    {"policyName": "Bike Insurance","code": "Bike Insurance","checked":false},
+    {"policyName": "Car Insurance","code": "Car Insurance","checked":false},
+    {"policyName": "Health Plans","code": "Health Plans","checked":false},
+    {"policyName": "Home Insurance","code": "Home Insurance","checked":false}
+  ],
+
+  "DataHelp":
+  [
+    {"policyName": "General Queries","code": "General Queries","checked":false},
+    {"policyName": "quick Queries","code": "Quick Queries","checked":false}
+
+
+  ],
+  "DataInsure":
+  [
+    {"policyName": "Bajaj Allianz","code": "Bajaj Allianz","checked":false},
+    {"policyName": "Bajaj TVS","code": "Bajaj TVS","checked":false},
+    {"policyName": "Shriram","code": "Shriram","checked":false},
+    {"policyName": "SBI","code": "SBI","checked":false},
+    {"policyName": "HDFC","code": "HDFC","checked":false},
+    {"policyName": "RELIANCE","code": "RELIANCE","checked":false},
+    {"policyName": "TATA","code": "TATA","checked":false}
+    
+  ],
+
+  "Query":
+  [
+    {"policyName": "Select","code": "Select","checked":false},
+    {"policyName": "CallBack","code": "CallBack","checked":false}
+    
+  ]
+  
+}

@@ -1,0 +1,197 @@
+
+<!-- ********************** 1st row ************************************ -->
+<amexio-row>
+    <amexio-column size="8" style="padding-top:7%">
+
+            <amexio-card [header]="true"
+           >
+ <amexio-header>
+  Submit Your Request
+ </amexio-header>
+ <amexio-body>
+   <amexio-row>
+
+        <amexio-column size="10">
+                  
+        
+                <amexio-dropdown
+                [place-holder]="'Choose'"
+                [field-label]="'Choose policy'"
+                [http-method]="'get'" 
+                [http-url]="'assets/data/policywallet.json'"
+                [display-field]="'policyName'"
+                 [value-field]="'code'"
+                [data-reader]="'DataHelp'"
+            
+                (onMultiSelect)="'onMultiSelectHelpValue($event)'">
+              </amexio-dropdown>
+            </amexio-column>
+    
+            <amexio-column size="2" style="padding-top:6%">
+                <amexio-button label="Go" [block]="true" [icon]="'fa fa-arrow-circle-o-right'" type="warning"(onClick)="'onGoHelpClick($event)'"></amexio-button>
+            </amexio-column>
+            
+
+    </amexio-row>
+    <amexio-row>
+
+       
+        <amexio-column size="6">
+
+                <amexio-dropdown
+               
+                [field-label]="'Product*'"
+                [http-method]="'get'" 
+                [http-url]="'assets/data/policywallet.json'"
+                [display-field]="'policyName'"
+                 [value-field]="'code'"
+                [data-reader]="'data'"
+            
+                (onMultiSelect)="'onMultiSelectHelpValue($event)'">
+              </amexio-dropdown>
+
+        </amexio-column>
+       
+         <amexio-column size="6">
+
+                <amexio-dropdown
+               
+                [field-label]="'Insurer'"
+                [http-method]="'get'" 
+                [http-url]="'assets/data/policywallet.json'"
+                [display-field]="'policyName'"
+                 [value-field]="'code'"
+                [data-reader]="'DataInsure'"
+            
+                (onMultiSelect)="'onMultiSelectHelpValue($event)'">
+              </amexio-dropdown>
+
+        </amexio-column>
+    </amexio-row>
+
+
+    <amexio-row>
+            
+        <amexio-column size="6"  style="padding-top:4%">
+                <amexio-dropdown
+               
+                [field-label]="'Query Type*'"
+                [http-method]="'get'" 
+                [http-url]="'assets/data/policywallet.json'"
+                [display-field]="'policyName'"
+                 [value-field]="'code'"
+                [data-reader]="'Query'"
+            
+                (onMultiSelect)="'onMultiSelectHelpValue($event)'">
+              </amexio-dropdown>
+        </amexio-column>
+      
+        <amexio-column size="6"  style="padding-top:5%">
+               <amexio-fileupload [http-url]="'/upload'"
+               [field-label]="'Attachment'"
+               [http-method]="'POST'"
+               [file-type]="'image/*'"
+               [multiple-file]="'*'"
+               [field-label]="'Attachment Upload'">
+</amexio-fileupload>
+        </amexio-column>
+    </amexio-row>
+
+
+<amexio-row style="padding-top:3%">
+    
+    <amexio-column size="6">
+        <amexio-text-input 
+        [field-label]="'Email ID*'"
+       [place-holder]="'Enter Email Id'"
+       [icon-feedback]="true"
+       [font-size]="'small'">
+</amexio-text-input>
+</amexio-column>
+
+    <amexio-column size="6">
+        <amexio-text-input 
+        [field-label]="'Comments'"
+       [place-holder]="'Enter Comments'"
+       [icon-feedback]="true"
+       [font-size]="'small'">
+</amexio-text-input>
+</amexio-column>
+    
+</amexio-row>
+
+
+
+
+            <amexio-row  >
+                <amexio-column size="5"></amexio-column>
+                <amexio-column size="2" style="padding-top:6%"><amexio-button label="Submit" [icon]="'	fa fa-hand-o-right'"[block]="true" type="primary">
+
+                </amexio-button></amexio-column>
+                <amexio-column size="5"></amexio-column>
+                
+            </amexio-row>
+    
+
+    </amexio-body>
+    </amexio-card>
+
+
+    <amexio-row >
+            <amexio-column size="12" style="padding-top:15%">
+    <amexio-label size=""style="padding-top:5%">“Disclaimer: The information displayed on My Account is only for information sake and are updates to the customer as received from the Insurer and Policybazaar shall not be liable and/or responsible for the accuracy, completeness, legality, or reliability of the information contained in this My Account section.”</amexio-label>
+</amexio-column>
+</amexio-row>    
+
+</amexio-column>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ right column~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <amexio-column size="4"style="padding-top:7%" >
+    
+            <amexio-card >
+                    <amexio-body>
+                            <amexio-row>
+                                    <amexio-column size="1"></amexio-column>
+                                    <amexio-column size="10">
+                                        
+                            <amexio-image path="assets/images/images/mypolicy1.png"></amexio-image>
+                                       
+                                                <amexio-button [label]="'Show Details'"  [icon]="'fa fa-caret-square-o-right'"[block]=true [type]="'warning'"></amexio-button>
+                     
+                                     
+                                            </amexio-column>
+                                            <amexio-column size="1"></amexio-column>
+                                        </amexio-row>
+                              </amexio-body>
+    
+                </amexio-card>
+                <amexio-card >
+                        <amexio-body>
+                                <amexio-row>
+                                        <amexio-column size="1"></amexio-column>
+                                        <amexio-column size="10">
+                                            
+           <amexio-image path="assets/images/images/m.png"></amexio-image>
+                        
+                     </amexio-column>
+                     <amexio-column size="1"></amexio-column>
+                     </amexio-row>
+                     
+             </amexio-body>
+    
+       </amexio-card>
+    
+      
+    </amexio-column>
+    
+    
+    
+    </amexio-row>
+
+
+
+
+
+
+
+

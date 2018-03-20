@@ -1,0 +1,39 @@
+
+{
+    "Data":[
+             {
+                
+                 "Name":"Ganesh Dev",
+                 "Sum_Assured":"5,00,000",
+                 "Primium":"21,240(yearly)"
+                 
+             }
+            ],
+
+    "PolicyDetails":[
+                {
+                    "key":"Booking_ID",
+                    "value":"1234"
+
+                },
+                {
+                    "key":"Policy_NO",
+                    "value":"p/12/234"
+
+                },{
+                    "key":"Policy_Term",
+                    "value":"1"
+
+                },{
+                    "key":"Booking_Date",
+                    "value":"24-feb-2018"
+
+                },{
+                    "key":"Primium",
+                    "value":"21,000(year)"
+
+                }
+            ]
+
+ }
+             

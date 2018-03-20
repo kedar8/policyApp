@@ -1,0 +1,120 @@
+[
+  {
+    "text": "LIFE ",
+    "icon":"fa fa-heart",
+    "children": [
+      {
+        "text": "Investment Plans"
+      },
+      {
+        "text": "Child Plans"
+      },
+      {
+        "text": "Pension plans"
+      },
+      {
+        "text": "Income Tax"
+      },
+      {
+        "text": "Money Back Policy"
+      },
+      {
+        "text": "Terms Insurance "
+      },
+      {
+        "text": "ULIPs"
+      }
+    ]
+  },
+  {
+    "text": "HEALTH ",
+    "icon":"fa fa-medkit",
+    "children": [
+      {
+        "text": "Health Plans"
+      },
+      {
+        "text": "Senior Cityzen Plans"
+      },
+      {
+        "text": "Medical Policy plans"
+      },
+      {
+        "text": "Critical Illness"
+      }
+    ]
+  },
+  {
+    "text": "MOTOR ",
+    "icon":"fa fa-motorcycle",
+    "children": [
+      {
+        "text": "Car Insurance"
+      },
+      {
+        "text": "Bike Insurance"
+      },
+      {
+        "text": "Two wheeler Insurance"
+      },
+      {
+        "text": "Three wheeler Insurance"
+      }
+    ]
+  },
+  {
+    "text": "OTHER ",
+    "icon":"fa fa-plus-square",
+    "children": [
+        {
+        "text": "Group Insurance"
+      },
+      {
+        "text": "General Insurance"
+      },
+      {
+        "text": "Home Insurance"
+      },
+      {
+        "text": "Personal Insurance"
+      },
+      {
+        "text": "Travles Insurance"
+      },
+      {
+        "text": "Personal Insurance"
+      }
+    ]
+  },
+  {
+    "text": "SUPPORT",
+    "icon":"fa fa-phone-square",
+    "children": [
+      {
+        "text": " Toll Free No:- 18002585970"
+        
+      },
+      {
+        "text": "For NRI:-  +911246656507"
+       
+      },
+      {
+        "text": "Ask Questions"
+      },
+      {
+        "text": "Contact US"
+      }
+    ]
+  },
+  {
+    "text": "CUTOMER",
+    "icon":"fa fa-smile-o",
+    
+    "children": [
+      {
+        "text": "Log Out"
+        
+      }
+    ]
+  }
+]
